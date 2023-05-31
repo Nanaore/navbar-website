@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link type="text/css" rel="stylesheet" href="bootstrap-5.3.0-alpha1-dist/css/bootstrap.min.css"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>  
+
+</head>
+<body>
+    <div class="container2">
+        <div class="navbar" style="float:left;">
+            <a href="home.html" class="row homerow">Home</a>
+            <a href="#" class="row">About</a>
+            <a href="createaccount.html" class="row">Create account</a>
+            <a href="#" class="row">Report</a>
+        </div>
+
+        <div class="navbar dropdown" id="droppy" style="float:right;">
+            <a href="#" class="dropdown-btn row" id="droppybtn">Menu</a>
+            <div class="dropdown-content" id="droppycon">
+                <a href="#" class="dl dl1">link1</a>
+                 <a href="#" class="dl dl2">link2</a>
+                <a href="#" class="dl dl3">link3</a> 
+            </div>
+        </div>
+    </div>
+
+    
+
+
+
+
+
+    <div>
+    <button id="clicko">click</button>
+    <p id="showp">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Esse,
+        aperiam doloremque dolores magnam molestiae pariatur maxime nesciunt ut
+         praesentium cupiditate, dolorem neque possimus nihil, vero architecto.
+          Ipsa rem molestiae exercitationem.</p>
+</div>
+
+<div class="container3">
+    <button id="seco">click me</button>
+    
+</div>
+<div class="container4">
+    <p class="pim">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni 
+        repellat dolorem facilis itaque vero ducimus atque adipisci nobis praesentium 
+        debitis nam, sint reprehenderit iure molestias, dolor cum voluptas consequuntur ut?</p>
+    <!-- <img src="puppy1.jpeg" class="pim" alt="puppy img"/> -->
+</div>
+
+    
+    
+
+    
+    
+
+       
+
+        
+    </div>
+
+    
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $("#droppybtn").click(function(){
+                $("#droppycon").toggle(1000);
+                $(".dl").show(1000);
+               
+            })
+        })
+
+        $(document).ready(function(){
+            $("#clicko").click(function(){
+                $("#showp").toggle(1000);
+            })
+        })
+
+        $(document).ready(function(){
+            $("#seco").click(function(){
+                $(".pim").toggle(3000);
+                   
+            })
+        })
+
+
+    //   $(document).ready(function(){
+    //     $(".btn").click(function(){
+    //         $(".hd1").toggle(1000)
+    //     })
+    //   })
+
+    //   $(document).ready(function(){
+    //     $(".bigcontent").click(function(){
+    //         $(".bigcontent").animate({width:"500px",height:"400px"}, 1000);
+    //         $(".inside").show().animate({opacity:1}, 3000);
+    //     });
+    //   })
+    </script>
+    
+    <!-- <script src="bootstrap-5.3.0-alpha1-dist/js/bootstrap.min.js"></script> -->
+ 
+</body>
+</html>
